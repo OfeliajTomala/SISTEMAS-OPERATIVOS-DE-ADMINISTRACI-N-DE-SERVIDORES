@@ -159,6 +159,7 @@ h5 {
 
 strong {
   color: #2C7873;
+  
 }
 
 p {
@@ -190,9 +191,12 @@ th {
 
 /* Listas */
 ul, ol {
-  padding-left: 20px;
+  font-size: 0.6em;
+  margin: 10px 0 20px;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: left;
-  color: #fff;
 }
 
 /* Botones */
