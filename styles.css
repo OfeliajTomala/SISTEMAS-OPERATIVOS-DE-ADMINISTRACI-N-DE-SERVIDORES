@@ -102,7 +102,7 @@ body {
 
 /* Títulos */
 h1 {
-  font-size: 3.8em;
+  font-size: 68px;
   margin-bottom: 2px;
   margin-top: 2px;
   background: linear-gradient(to right, #00F260, #8EF9F3);
@@ -114,7 +114,7 @@ h1 {
   
 }
 h2 {
-  font-size: 2em;
+  font-size: 40px;
   margin-bottom: 20px;
   background: linear-gradient(to right, #00ffff, #00c9ff);
   -webkit-background-clip: text;
@@ -125,7 +125,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 40px;
   margin: 10px 0 20px;
   background: linear-gradient(to right, #00F260, #8EF9F3);
   -webkit-background-clip: text;
@@ -135,7 +135,7 @@ h3 {
 
 
 h4 {
-  font-size: 1em;
+  font-size: 36px;
   margin-top: 0px;
   margin-bottom: 10px;
   background: linear-gradient(to right, #00ffff, #00c9ff);
@@ -149,7 +149,7 @@ h4 {
 
 
 h5 {
-  font-size: 0.7em;
+  font-size: 20px;
   margin: 10px 0 20px;
   background: linear-gradient(to right, #ffffff, #ffffff);
   -webkit-background-clip: text;
@@ -176,7 +176,7 @@ strong {
 }
 
 p {
-  font-size: 0.6em;
+  font-size: 0.5em;
   margin: 10px 0 20px;
   background: linear-gradient(to right, #ffffff, #ffffff);
   -webkit-background-clip: text;
