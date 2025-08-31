@@ -1,0 +1,238 @@
+/* Estilo general del cuerpo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: rgba(5, 5, 5, 1);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Contenedor central */
+.contenedor {
+  text-align: center;
+  background-color: rgba(2, 28, 30, 1); /* #021C1E blue black */
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  color: #6FB98F; /* texto en verde suave para contraste */
+}
+
+/* Otros contenedores */
+.contenedor2 {
+  text-align: center;
+  background-color: rgba(0, 68, 69, 1); /* #004445 cadet blue */
+  max-width: 900px;
+  padding: 40px;
+  margin: auto;
+  border-radius: 20px;
+  color: #6FB98F; 
+}
+
+/* Contenedor para conceptos */
+.contenedor3 {
+  text-align: center;
+  background-color: rgba(44, 120, 115, 1); /* #2C7873 rain */
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 20px;
+  margin: auto;
+  color: #fff;
+}
+
+/* Contenedor para otros textos dentro de ensayo */
+
+.contenedor6 {
+  text-align: center;
+  background-color: rgb(26, 99, 94); /* #2C7873 rain */
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 20px;
+  margin: auto;
+  color: #fff;
+}
+
+/* Contenedor padre para objetivos y materiales */
+.fila-contenedores {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+/* Contenedor para objetivos y materiales */
+.contenedor4 {
+  text-align: left;
+  background-color: rgba(44, 120, 115, 1); /* #004445 cadet blue */
+  max-width: 390px;
+  padding: 40px;
+  border-radius: 20px;
+  flex:1 1 390px;
+  box-sizing: border-box;
+  color: #6FB98F;
+}
+/*Contenedor para imagenes*/
+.contenedor5 { 
+ text-align: center;
+  background-color: rgba(44, 120, 115, 1); /* #004445 cadet blue */
+  max-width: 900px;
+  padding: 40px;
+  margin: auto;
+  border-radius: 20px;
+  color: #6FB98F; 
+}
+.imagen-derecha {
+    float: right;          /* hace que la imagen se quede a la izquierda */
+    margin: 10px 0px 10px 20px;   /* separa la imagen del texto */
+    max-width: 50%;       /* opcional: ajusta el tamaño de la imagen */
+}
+
+.imagen-izquierda {
+    float: left;           /* coloca la imagen a la izquierda */
+    margin: 10px 20px 10px 0; /* arriba 0, derecha 20px, abajo 20px, izquierda 0 */
+    max-width: 40%;        /* opcional: ajusta el tamaño de la imagen */
+}
+
+
+/* Títulos */
+h1 {
+  font-size: 3.8em;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  background: linear-gradient(to right, #00F260, #8EF9F3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #00ffff, #00c9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 10px 0 20px;
+  background: linear-gradient(to right, #00F260, #8EF9F3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+h4 {
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #00ffff, #00c9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+
+
+h5 {
+  font-size: 0.7em;
+  margin: 10px 0 20px;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+strong {
+  color: #2C7873;
+}
+
+p {
+  font-size: 0.6em;
+  margin: 10px 0 20px;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: justify;
+  
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+  background-color: rgba(111, 185, 143, 0.2); /* verde suave semitransparente */
+}
+th {
+  background: rgba(44, 120, 115, 1); 
+  color: #fff;
+}
+
+/* Listas */
+ul, ol {
+  padding-left: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+/* Botones */
+.btn {
+  text-decoration: none;
+  background: linear-gradient(to right, #004445, #2C7873);
+  padding: 15px 30px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #2C7873, #6FB98F);
+}
+
+/* Botones anterior/siguiente */
+.fila-botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: auto;
+  margin: auto;
+  padding: 0 50px;
+  gap: 100px;  
+}
+
+/* Fórmulas */
+.formula {
+  background-color: rgba(44, 120, 115, 1);
+  padding: 10px;
+  border-left: 4px solid #6FB98F;
+  margin: 10px 0;
+  font-family: monospace;
+  display: inline-block;
+  color: #fff;
+}
