@@ -102,7 +102,7 @@ body {
 
 /* Títulos */
 h1 {
-  font-size: 68px;
+  font-size: 4.5em;
   margin-bottom: 2px;
   margin-top: 2px;
   background: linear-gradient(to right, #00F260, #8EF9F3);
@@ -136,7 +136,7 @@ h3 {
 
 
 h4 {
-  font-size: 0.8em;
+  font-size: 2.5em;
   margin-top: 0px;
   margin-bottom: 10px;
   background: linear-gradient(to right, #00ffff, #00c9ff);
@@ -150,15 +150,10 @@ h4 {
 
 
 h5 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin: 10px 0 20px;
-  background: linear-gradient(to right, #ffffff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: justify;
-  background-clip: text;
-  color: transparent;
-  text-align: justify;
+  color: #ffffff;
 }
 /*SUBTITULO*/
 h6 {
@@ -180,14 +175,9 @@ strong {
 }
 
 p {
-  font-size: 0.5em;
+  font-size: 1.3em;
   margin: 10px 0 20px;
-  background: linear-gradient(to right, #ffffff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-
+  color: #ffffff;
   text-align: justify;
   
 }
@@ -211,14 +201,10 @@ th {
 
 /* Listas */
 ul, ol {
-  font-size: 0.5em;
+  font-size: 1.3em;
   margin: 10px 0 20px;
-  background: linear-gradient(to right, #ffffff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  text-align: left;
+  color: #ffffff;
+  text-align: justify;
   
 }
 
