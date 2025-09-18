@@ -7,7 +7,7 @@ body {
   background-size: cover;
   background-position: center;
   color: #fff;
-
+  
 }
 
 /* Contenedor central */
@@ -20,6 +20,7 @@ body {
   width: 90%;
   margin: auto;
   color: #6FB98F; /* texto en verde suave para contraste */
+  box-sizing: border-box;
 }
 
 /* Otros contenedores */
@@ -31,6 +32,7 @@ body {
   margin: auto;
   border-radius: 20px;
   color: #6FB98F; 
+  box-sizing: border-box;
 }
 
 /* Contenedor para conceptos */
@@ -42,6 +44,7 @@ body {
   border-radius: 20px;
   margin: auto;
   color: #fff;
+  box-sizing: border-box;
 }
 
 /* Contenedor para otros textos dentro de ensayo */
@@ -54,6 +57,16 @@ body {
   border-radius: 20px;
   margin: auto;
   color: #fff;
+  box-sizing: border-box;
+}
+.contenedor7 {
+  text-align: left;
+  background-color: rgb(255, 255, 255); 
+  max-width: 900px;
+  padding: 10px;
+  margin: auto;
+  color: #010000;
+  box-sizing: border-box;
 }
 
 /* Contenedor padre para objetivos y materiales */
@@ -64,6 +77,7 @@ body {
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 /* Contenedor para objetivos y materiales */
@@ -71,38 +85,43 @@ body {
   text-align: left;
   background-color: rgba(44, 120, 115, 1); /* #004445 cadet blue */
   max-width: 390px;
+  min-width: 280px;
   padding: 40px;
   border-radius: 20px;
-  flex:1 1 390px;
+  flex:1 1 300px;
   box-sizing: border-box;
   color: #6FB98F;
+  box-sizing: border-box;
 }
 /*Contenedor para imagenes*/
 .contenedor5 { 
  text-align: center;
   background-color: rgba(44, 120, 115, 1); /* #004445 cadet blue */
   max-width: 900px;
+  width: 90%;
   padding: 40px;
   margin: auto;
   border-radius: 20px;
-  color: #6FB98F; 
+  color: #6FB98F;
+  box-sizing: border-box; 
 }
 .imagen-derecha {
     float: right;          /* hace que la imagen se quede a la izquierda */
     margin: 10px 0px 10px 20px;   /* separa la imagen del texto */
     max-width: 50%;       /* opcional: ajusta el tamaño de la imagen */
+    height: auto;
 }
 
 .imagen-izquierda {
     float: left;           /* coloca la imagen a la izquierda */
     margin: 10px 20px 10px 0; /* arriba 0, derecha 20px, abajo 20px, izquierda 0 */
     max-width: 40%;        /* opcional: ajusta el tamaño de la imagen */
+    height: auto;
 }
-
 
 /* Títulos */
 h1 {
-  font-size: 4.5em;
+  font-size: clamp(2.5em, 8vw, 4.5em);
   margin-bottom: 2px;
   margin-top: 2px;
   background: linear-gradient(to right, #00F260, #8EF9F3);
@@ -111,10 +130,10 @@ h1 {
   background-clip: text;
   color: transparent;
   display: inline-block;
-  
+  line-height: 1.2;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: clamp(1.8em, 5vw, 2.5em);
   margin-bottom: 20px;
   background: linear-gradient(to right, #00ffff, #00c9ff);
   -webkit-background-clip: text;
@@ -122,21 +141,23 @@ h2 {
   background-clip: text;
   color: transparent;
   display: inline-block;
+  line-height: 1.2;
 }
 
 h3 {
-  font-size: 3.5em;
+  font-size: clamp(2.2em, 6vw, 3.5em);
   margin: 10px 0 20px;
   background: linear-gradient(to right, #00F260, #8EF9F3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  line-height: 1.2;
 }
 
 
 h4 {
-  font-size: 2.5em;
+  font-size: clamp(1.8em, 5vw, 2.5em);
   margin-top: 0px;
   margin-bottom: 10px;
   background: linear-gradient(to right, #00ffff, #00c9ff);
@@ -145,19 +166,20 @@ h4 {
   background-clip: text;
   color: transparent;
   display: inline-block;
+  line-height: 1.2;
 }
 
 
 
 h5 {
-  font-size: 1.8em;
+  font-size: clamp(1.4em, 3.5vw, 1.8em);
   margin: 10px 0 20px;
   text-align: justify;
   color: #ffffff;
 }
 /*SUBTITULO*/
 h6 {
-  font-size: 2em;
+  font-size: clamp(1.5em, 4vw, 2em);
   margin-bottom: 20px;
   margin-top: 2px;
   background: linear-gradient(to right, #00F260, #8EF9F3);
@@ -170,12 +192,14 @@ h6 {
 }
 
 strong {
-  color: #2C7873;
+  font-size: clamp(1.8em, 5vw, 2.5em);
+  color: #0eebc2;
+
   
 }
 
 p {
-  font-size: 1.3em;
+  font-size: clamp(1.1em, 2.5vw, 1.3em);
   margin: 10px 0 20px;
   color: #ffffff;
   text-align: justify;
@@ -224,18 +248,20 @@ ul, ol {
 .btn {
   text-decoration: none;
   background: linear-gradient(to right,  #00F260, #8EF9F3);
-  padding: 15px 30px;
+  padding: 15px 20px;
   border-radius: 12px;
   color: rgb(17, 24, 24);
-  font-size: 2.2em;
+  font-size: clamp(1.4em, 4vw, 2.2em);
   font-weight: bold;
-  flex: 1 1 auto;
-  width: 250px;
+  flex: 1 1 200px;
+  min-width: 200px;
+  max-width: 300px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.4);
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .btn:hover {
@@ -248,10 +274,11 @@ ul, ol {
   display: flex;               /* activa flexbox */
   justify-content: space-between; /* uno a la izquierda, otro a la derecha */
   align-items: stretch;         /* centra verticalmente si tienen diferente altura */
-  width: auto;            /* opcional: ancho máximo del contenedor */
+  width: 100%;            /* opcional: ancho máximo del contenedor */
   margin: auto;                /* centra el contenedor horizontalmente */
-  padding: 0 50px;             /* opcional: espacio interno horizontal */
-  gap: 100px;  
+  padding: 0 20px;             /* opcional: espacio interno horizontal */
+  gap: 20px;
+  box-sizing: border-box;  
 }
 
 /* Fórmulas */
@@ -263,4 +290,109 @@ ul, ol {
   font-family: monospace;
   display: inline-block;
   color: #fff;
+  font-size: clamp(0.9em, 2vw, 1em);
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+/* Media Queries para dispositivos específicos */
+
+/* Tablets y dispositivos medianos */
+@media screen and (max-width: 768px) {
+  .contenedor,
+  .contenedor2,
+  .contenedor3,
+  .contenedor5,
+  .contenedor6 {
+    width: 95%;
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+  
+  .contenedor4 {
+    min-width: 250px;
+    padding: 30px 20px;
+  }
+  
+  .fila-contenedores {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .botones {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .btn {
+    min-width: auto;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .fila-botones {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .imagen-derecha,
+  .imagen-izquierda {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  table {
+    font-size: 0.9em;
+  }
+  
+  th, td {
+    padding: 6px 8px;
+  }
+}
+
+/* Móviles */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .contenedor,
+  .contenedor2,
+  .contenedor3,
+  .contenedor4,
+  .contenedor5,
+  .contenedor6 {
+    width: 98%;
+    padding: 20px 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+  
+  .fila-botones {
+    padding: 0 5px;
+  }
+  
+  .imagen-derecha,
+  .imagen-izquierda {
+    max-width: 95%;
+    margin: 15px auto;
+  }
+  
+  .formula {
+    padding: 8px;
+    font-size: 0.85em;
+  }
+  
+  th, td {
+    padding: 4px 6px;
+    font-size: 0.8em;
+  }
+  
+  ul, ol {
+    padding-left: 20px;
+  }
 }
