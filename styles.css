@@ -212,7 +212,7 @@ a {
   font-size: clamp(1.1em, 2.5vw, 1.3em);
   margin: 10px 0 20px;
   color: #ffffff;
-  text-align: justify;
+  text-align: center;
   
 }
 
@@ -265,7 +265,7 @@ ul, ol {
   color: rgb(17, 24, 24);
   font-size: clamp(1.4em, 4vw, 2.2em);
   font-weight: bold;
-  flex: 1 1 200px;
+  flex: 1 1 auto;
   min-width: 200px;
   max-width: 300px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.4);
@@ -286,7 +286,7 @@ ul, ol {
   display: flex;               /* activa flexbox */
   justify-content: space-between; /* uno a la izquierda, otro a la derecha */
   align-items: stretch;         /* centra verticalmente si tienen diferente altura */
-  width: 100%;            /* opcional: ancho máximo del contenedor */
+  width: auto;            /* opcional: ancho máximo del contenedor */
   margin: auto;                /* centra el contenedor horizontalmente */
   padding: 0 20px;             /* opcional: espacio interno horizontal */
   gap: 20px;
