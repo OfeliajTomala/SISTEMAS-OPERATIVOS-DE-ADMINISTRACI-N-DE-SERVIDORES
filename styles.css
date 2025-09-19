@@ -59,14 +59,16 @@ body {
   color: #fff;
   box-sizing: border-box;
 }
+
 .contenedor7 {
+  background-color: #ffffff;   /* Color de fondo */
+  border-left: 5px solid #00a884;  /* Línea decorativa a la izquierda */
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;   /* Bordes redondeados */
+  font-size: 14px;
+  color: #000000;
   text-align: left;
-  background-color: rgb(255, 255, 255); 
-  max-width: 900px;
-  padding: 10px;
-  margin: auto;
-  color: #010000;
-  box-sizing: border-box;
 }
 
 /* Contenedor padre para objetivos y materiales */
@@ -205,6 +207,16 @@ p {
   text-align: justify;
   
 }
+
+a {
+  font-size: clamp(1.1em, 2.5vw, 1.3em);
+  margin: 10px 0 20px;
+  color: #ffffff;
+  text-align: justify;
+  
+}
+
+
 
 /* Tablas */
 table {

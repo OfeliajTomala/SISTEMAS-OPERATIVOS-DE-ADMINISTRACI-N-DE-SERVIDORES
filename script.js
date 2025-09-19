@@ -14,19 +14,19 @@ ctx.stroke();
 
 //progress
 
-let progreso = document.getElementById("progreso");
-let porcentajeTexto = document.getElementById("porcentaje");
-let mensaje = document.getElementById("mensaje");
-
-let valor = 0;
-
-let intervalo = setInterval(() => {
-  if (valor < 100) {
-    valor++;
-    progreso.value = valor;
-    porcentajeTexto.textContent = valor + "%";
-  } else {
-    clearInterval(intervalo);
-    mensaje.textContent = "¡Carga completa!";
-  }
-}, 100);
+ function iniciarCarga() {
+            let progressBar = document.getElementById('miProgress');
+            let porcentaje = document.getElementById('porcentaje');
+            let valor = 0;
+            
+            let intervalo = setInterval(() => {
+                if (valor >= 100) {
+                    clearInterval(intervalo);
+                } else {
+                    valor += 5;
+                    progressBar.value = valor;
+                    progressBar.textContent = valor + '%';
+                    porcentaje.textContent = valor + '% completado';
+                }
+            }, 500);
+        }

@@ -22,7 +22,7 @@
             <div class="contenedor7">
                 <code>&lt;html&gt;
                 <br>
-                -- contenido HTML aquí --
+                &lt;-- contenido HTML aquí --&gt;
                 <br>
                 &lt;/html&gt;</code>
             </div>
@@ -47,18 +47,18 @@
                 Incluye todo el contenido visible de la página que se muestra al usuario, como texto, imágenes, videos,
                 etc.<br>
                 Ejemplo:
+            </p>
             <div class="contenedor7">
                 <code>&lt;body&gt;
                     <br>
                     &lt;h1&gt;Bienvenidos a mi web&lt;/h1&gt;
                     <br>
-                    &lt;p&gt;Este es el contenido principal&lt;/p&gt;<br>
+                    &lt;p&gt;Este es el contenido&lt;/p&gt;<br>
                 &lt;body&gt;
                 </code>
-            </div>
-            <br>
-            <img src="imagenesetiquetas/head.png" style="max-width:100%; height:auto;" /><br>
-            </p>
+            </div><br>
+            <h1>Bienvenido a mi web</h1>
+            <p>Este es el contenido</p>            
         </div><br>
         <div class="contenedor2"> <!-- h1 a h6 -->
             <strong><code>&lt;h1&gt; a &lt;h6&gt;</code></strong>
@@ -66,6 +66,7 @@
                 Representan títulos y subtítulos, donde &lt;h1&gt; es el de mayor nivel (más importante)
                 y &lt;h6&gt; el de menor.<br>
                 Ejemplo:
+            </p>
             <div class="contenedor7">
                 <code>&lt;h1&gt;Título principal&lt;/h1&gt;
                     <br>
@@ -73,8 +74,9 @@
                 </code>
             </div>
             <br>
-            <img src="imagenesetiquetas/h1.png" style="max-width:100%; height:auto;" /><br>
-            </p>
+            <h1>Título principal</h1>
+            <h2>Subtítulo</h2>
+            
         </div><br>
         <div class="contenedor2"> <!-- p -->
             <strong><code>&lt;p&gt;</code></strong>
@@ -85,18 +87,19 @@
                 <code>&lt;p&gt;Este es un párrafo de texto en la página web.&lt;/p&gt;</code><br>
             </div>
             </p>
-            <img src="imagenesetiquetas/p.png" style="max-width:100%; height:auto;" />
+            <p>Este es un párrafo de texto en la página web.</p>
         </div><br>
         <div class="contenedor2"> <!-- a -->
             <strong><code>&lt;a&gt;</code></strong>
             <p>
                 Etiqueta para crear enlaces o hipervínculos a otras páginas o recursos.<br>
                 Ejemplo:
-            <div class="contenedor7">
-                <code>&lt;a href="https://www.ejemplo.com"&gt;Visita Ejemplo&lt;/a&gt;</code>
-            </div>
             </p>
-            <img src="imagenesetiquetas/a.png" style="max-width:100%; height:auto;" />
+            <div class="contenedor7">
+                <code>&lt;a href="https://ofeliajtomala.github.io/SISTEMAS-OPERATIVOS-DE-ADMINISTRACI-N-DE-SERVIDORES/"&gt;Página principal&lt;/a&gt;</code>
+            </div>
+            <a href="https://ofeliajtomala.github.io/SISTEMAS-OPERATIVOS-DE-ADMINISTRACI-N-DE-SERVIDORES/">Página
+                principal</a>
         </div><br>
         <div class="contenedor2"> <!-- img -->
             <strong><code>&lt;img&gt;</code></strong>
@@ -123,6 +126,10 @@
                     &lt;/ul&gt;</code>
             </div>
             </p>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+            </ul>
         </div><br>
         <div class="contenedor2"> <!-- ol -->
             <strong><code>&lt;ol&gt;</code></strong>
@@ -136,7 +143,10 @@
                         &lt;li&gt;Segundo paso&lt;/li&gt;<br>
                     &lt;ol&gt;</code>
             </div>
-
+            <ol>
+                <li>Primer paso</li>
+                <li>Segundo paso</li>
+            </ol>
         </div><br>
         <div class="contenedor2"> <!-- table -->
             <strong><code>&lt;table&gt;</code></strong>
@@ -161,7 +171,7 @@
                         &lt;td&gt;35&lt;/td&gt;<br>
                     &lt;/tr&gt;<br>
                 &lt;/table&gt;</code>
-            </div>
+            </div><br>
             <table>
                 <tr>
                     <th>Nombre</th>
@@ -264,17 +274,22 @@
         <div class="contenedor2"> <!--progress-->
             <strong><code>&lt;progress&gt;</code></strong>
             <p>
-                Muestra una barra visual que indica el progreso de una tarea, por ejemplo, descarga o carga.
-            <div class="contenedor7">
-                <code>&lt; &gt;</code>
-            </div>
+                Muestra una barra visual que indica el progreso de una tarea, por ejemplo, descarga o carga.<br>
+                Ejemplo con &lt;progress&gt; (JS en archivo aparte)
             </p>
-            <p>Ejemplo con &lt;progress&gt; (JS en archivo aparte)</p>
+            <div class="contenedor7">
+                <code>
+                    &lt;label id="porcentaje"&gt;0% completado&lt;/label&gt;<br>
+                    &lt;progress id="miProgress" value="0" max="100">0%&lt;/progress&gt;<br>
+                    &lt;button onclick="iniciarCarga()"&gt;Iniciar carga&lt;/button&gt;<br>
+                    &lt;!-- Vinculamos el archivo JS externo --&gt;<br>
+                    &lt; script src="script.js"&gt;&lt;/script&gt;
+                </code>
+            </div><br>
 
-            <label for="progreso">Cargando...</label>
-            <progress id="progreso" value="0" max="100">0%</progress>
-
-            <p id="mensaje"></p>
+            <label id="porcentaje">0% completado</label>
+            <progress id="miProgress" value="0" max="100">0%</progress>
+            <button onclick="iniciarCarga()">Iniciar carga</button>
             <!-- Vinculamos el archivo JS externo -->
             <script src="script.js"></script>
 
@@ -287,10 +302,15 @@
                 Ejemplo:
             </p>
             <div class="contenedor7">
-                <code>&lt; &gt;</code>
+                <code>
+                    &lt;label for="nivel"&gt;Nivel de batería:&lt;/label&gt;<br>
+                    &lt;meter id="nivel" value="0.6" min="0" max="1" low="0.2" high="0.8" optimum="0.7"&gt; 60% &lt;/meter&gt;
+
+                </code>
             </div>
-            
-            
+            <label for="nivel">Nivel de batería:</label>
+            <meter id="nivel" value="0.6" min="0" max="1" low="0.2" high="0.8" optimum="0.7"> 60% </meter>
+
         </div><br>
         <div class="contenedor2"> <!--details-->
             <strong><code>&lt;details&gt;</code></strong>
@@ -326,8 +346,6 @@
                 <code>&lt;p&gt;Este texto contiene una&lt;mark&gt;palabra resaltada&lt;/mark&gt;para llamar la atención.&lt;/p&gt;</code>
             </div><br>
             <p>Este texto contiene una <mark>palabra resaltada</mark> para llamar la atención.</p>
-
-
         </div><br>
 </body>
 
